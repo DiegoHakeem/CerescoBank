@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CerescoBank - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header flex-space-between-center">
+        <a href="index.html"><img class="header-ceresco" src="images/CerescoWhite.png" alt="CerescoBank Logo"></a>
+        <nav>
+            
+            <ul>
+                <li class="active"><a class="roboto-regular" href="index.html">Home</a></li>
+                <li class="dropdown-parent">
+                    <a class="roboto-regular" href="#">Accounts & Services <img class="triangle triangle-black" src="images/dropdown-triangle-bl.png" alt="dropdown"><img class="triangle triangle-white" src="images/dropdown-triangle-wh.png" alt="dropdown"></a>
+                    <ul class="dropdown">
+                        <li><a class="roboto-regular" href="checking.html">Checking Accounts</a></li>
+                        <li><a class="roboto-regular" href="savings.html">Savings Accounts</a></li>
+                        <li><a class="roboto-regular" href="additional-services.html">Additional Services</a></li>
+                    </ul>
+                </li>
+                <li><a class="roboto-regular" href="about.html">About Us</a></li>
+                <li><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="menu-white" src="images/menuicon.png" alt="Dropdown Menu"><img class="menu-black" src="images/menuicon-black.png" alt="Dropdown Menu"></a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- Hero Section-->
+
+    <div class="hero">
+        <div class="hero-img">
+            <img class="crop-image" src="images/CircleCropCB.png" alt="CerescoBank building">
+            <img class="no-crop-image" src="images/NoCropCB.png" alt="CerescoBank building">
+        </div>
+        <div class="hero-right flex-column-center">
+            <div class="login">
+                <div class="login-header flex-column-center">
+                    <img src="images/CBWhite.png" alt="CB Logo" height="60em">
+                    <hr>
+                    <h1 class="roboto-regular">Online Banking</h1>
+                </div>
+
+                <div class="login-body flex-column-center">
+                    <div class="username flex-center-center">
+                        <h3>Username:</h3>
+                        <input type="text" name="LIUSERNAME">
+                    </div>
+
+                    <div class="password flex-center-center">
+                        <h3>Password:</h3>
+                        <input type="password" name="LIPASSWORD">
+                    </div>
+
+                    <button type="submit">Login</button>
+                    <a href="https://cerescobank.onlineaurora.com/BankBin/QAS/Password/Reset">Forgot Password?</a>
+                    <div class="app-icons flex-center-center">
+                        <a class="flex-center-center" href="https://play.google.com/store/apps/details?id=com.cspiinc.cbcnesub&pli=1">
+                            <img src="images/GooglePlay.png" alt="GooglePlay" width="180em"></a>
+                        <a class="flex-center-center" href="https://apps.apple.com/us/app/cerescobank-mobile/id1436508076">
+                            <img src="images/AppStore.png" alt="AppStore" width="180em"></a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="register">To register for Online Banking,</h2>
+            <h2 class="register">please call us at (402) 665-3431</h2>
+        </div>
+    </div>
+
+
+<!-- Product Type Section-->
+
+
+    <div class="product-types">
+        <div class="account-types">
+            <div class="account-types-header roboto-regular">
+                <h1>Deposit Accounts</h1>
+            </div>
+            <div class="account-types-body flex-column-center">
+                <ul>
+                    <li>Checking Accounts</li>
+                    <li>Savings Accounts</li>
+                    <li>Money Market accounts</li>
+                    <li>Certificates of Deposit</li>
+                    <li>IRA Products</li>
+                    <li>Educational Savings Products</li>
+                </ul>
+                <a href="checking.html"><button>View Accounts</button></a>
+            </div>
+        </div>
+
+        <div class="account-types">
+            <div class="account-types-header roboto-regular">
+                <h1>Loans</h1>
+            </div>
+            <div class="account-types-body flex-column-center">
+                <ul>
+                    <li>Consumer</li>
+                    <li>Commercial</li>
+                    <li>Agricultural</li>
+                    <li>Student Loans</li>
+                    <li>Real Estate & Home Equity</li>
+                    <li>Nebraska Energy Loans</li>
+                    <li>SBA Loans</li>
+                </ul>
+                <a href="loans.html"><button>Contact Us</button></a>
+            </div>
+        </div>
+
+        <div class="account-types">
+            <div class="account-types-header roboto-regular">
+                <h1>CerescoBank Insurance*</h1>
+            </div>
+            <div class="account-types-body flex-column-center">
+                <ul>
+                    <li>Auto</li>
+                    <li>Home</li>
+                    <li>Commercial</li>
+                    <li>Property and Casualty Insurance</li>
+                    <li>Life and Disability Insurance</li>
+                    <li>Federal Crop Insurance</li>
+                    <li>Multiple-peril insurance</li>
+                </ul>
+                <a href="insurance.html"><button>View Accounts</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Credit Card Section-->
+
+    <div class="credit-card">
+        <div class="credit-left flex-column-center">
+            <h1 class="roboto-regular">Opportunity knocks with</h1>
+            <h1 class="roboto-regular">credit cards from</h1>
+            <img class="ceresco-credit" src="images/CerescoWhite.png" alt="CerescoBank Logo">
+            <h2 class="roboto-regular">Low Rate, Rewards, and Cash Back Options Available¹</h2>
+            <a href="https://www.mycommunitycc.com/Dej8gcfVGpgw"><button>Apply Online or Ask Us for Details</button></a>
+            <h6 class="roboto-regular">Subject to credit approval. This card is issued by TCM Bank N.A.</h6>
+            <h6 class="roboto-regular">¹To access rewards, your account must be open and in good standing</h6>
+            <img class="fdic-credit" src="images/FDIC.png" alt="Equal Housing Lender and Member FDIC">
+        </div>
+        <div class="credit-right flex-center-center">
+            <img class="credit-ad" src="images/CreditCard.png" alt="Credit Card Advertisement">
+            <img class="credit-ad-crop" src="images/CreditCardCropped.png" alt="Credit Card Advertisement">
+        </div>
+    </div>
+
+    <!--Contact Section-->
+
+    <div class="contact-section">
+        <div class="locations">
+            <h1 class="location-title">
+                Bank Address:
+            </h1>
+            <p class="atm-text">
+                P.O. Box 36
+                130 West Elm Street
+                Ceresco, Nebraska 68017
+            </p>
+            <p class="atm-title">
+                Bank Hours:
+            </p>
+            <p class="atm-text">
+                Mon - Fri 8:30 am - 4:30 pm. <br>
+                Sat 8:30 am - 11:30 am.
+            </p>
+            <h1 class="location-title">ATM Locations:</h1>
+            <p class="atm-title">
+                Super C:
+            </p>
+            <p class="atm-text">
+                317 Highway 77
+                Ceresco, NE 68017
+                Available during normal business hours.
+            </p>
+            <p class="atm-title">
+                Blue Catfish Corner Store:
+            </p>
+            <p class="atm-text">
+                5700 West Raymond Road
+                Raymond, NE 68428
+                Available during normal business hours.
+            </p>
+            <p class="atm-title">
+                CerescoBank Drive Up:
+            </p>
+            <p class="atm-text">
+                130 West Elm Street
+                Ceresco, NE 68017
+                Available 24hrs.
+            </p>
+            <p class="atm-title">
+                Davey Tavern:
+            </p>
+            <p class="atm-text">
+                17740 N 2nd St.
+                Davey, NE 68336
+                Available during normal business hours.
+            </p>
+        </div>
+        <div class="contact">
+            <div class="contact-header flex-space-between-center">
+                <h1 class="roboto-regular">Contact Us</h1>
+                <img src="images/CBWhite.png" alt="CB Logo" height="60em">
+            </div>
+
+            <div class="contact-body">
+                <div class="contact-name contact-input">
+                    <label class="roboto-regular contact-box-header" for="NAME">Name:</label>
+                    <input type="text" name="NAME">
+                </div>
+
+                <div class="contact-email contact-input">
+                    <label class="roboto-regular contact-box-header" for="EMAIL">Email:</label>
+                    <input type="text" name="EMAIL">
+                </div>
+
+                <div class="contact-message contact-input">
+                    <label class="roboto-regular contact-box-header" for="MESSAGE">Message:</label>
+                    <textarea name="MESSAGE" rows="8" cols="50"></textarea>
+                </div>
+                <div class="send-button">
+                    <button type="submit"  class="roboto-regular">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer flex-column-center">
+        <p class="footer-text">
+            Send mail to webmaster@cerescobank.com with questions or comments about this web site. <br>
+            Phone: (402) 665-3431<br>
+            Toll Free: (800) 371-5076<br>
+            Fax: (402) 665-2390
+        </p>
+        <p class="privacy-policy">
+            Privacy Policy
+            * IMPORTANT INSURANCE DISCLOSURE
+            Insurance Products and Annuities sold by CerescoBank Insurance:
+            Are not a deposit or other obligation of, or guaranteed by, CerescoBank or any affiliate of CerescoBank;
+            Are not insured by the Federal Deposit Insurance Corporation (FDIC) or any other agency of the United States,CerescoBank, or any affiliate of the bank;
+            May involve investment risk, including the possible loss of value.
+        </p>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
