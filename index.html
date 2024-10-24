@@ -12,9 +12,8 @@
 <body>
     <div class="page-header flex-space-between-center">
         <a href="index.html"><img class="header-ceresco" src="images/CerescoWhite.png" alt="CerescoBank Logo"></a>
-        <nav>
-            
-            <ul>
+        <div class="nav">
+            <ul class="top-navbar">
                 <li class="active"><a class="roboto-regular" href="index.html">Home</a></li>
                 <li class="dropdown-parent">
                     <a class="roboto-regular" href="#">Accounts & Services <img class="triangle triangle-black" src="images/dropdown-triangle-bl.png" alt="dropdown"><img class="triangle triangle-white" src="images/dropdown-triangle-wh.png" alt="dropdown"></a>
@@ -26,10 +25,19 @@
                 </li>
                 <li><a class="roboto-regular" href="about.html">About Us</a></li>
                 <li><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="menu-white" src="images/menuicon.png" alt="Dropdown Menu"><img class="menu-black" src="images/menuicon-black.png" alt="Dropdown Menu"></a></li>
             </ul>
-        </nav>
+            <a class="icon" onclick="openSidebar()"><img class="menu-white" src="images/menuicon.png" alt="Open Sidebar"><img class="menu-black" src="images/menuicon-black.png" alt="Open Sidebar"></a>
+        </div>
     </div>
+    <ul class="side-navbar" id="sidenav-container">
+        <a class="icon nav-close" onclick="closeSidebar()"><img class="menu-white" src="images/xicon-white.png" alt="Close Sidebar"><img class="menu-black" src="images/xicon-black.png" alt="Close Sidebar"></a>
+        <li class="active"><a class="roboto-regular" href="index.html">Home</a></li>
+        <li><a class="roboto-regular" href="checking.html">Checking Accounts</a></li>
+        <li><a class="roboto-regular" href="savings.html">Savings Accounts</a></li>
+        <li><a class="roboto-regular" href="additional-services.html">Additional Services</a></li>
+        <li><a class="roboto-regular" href="about.html">About Us</a></li>
+        <li><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
 <!-- Hero Section-->
 
     <div class="hero">
@@ -107,7 +115,7 @@
                     <li>Nebraska Energy Loans</li>
                     <li>SBA Loans</li>
                 </ul>
-                <a href="loans.html"><button>Contact Us</button></a>
+                <a href="#contact-jump"><button>Contact Us</button></a>
             </div>
         </div>
 
@@ -125,7 +133,7 @@
                     <li>Federal Crop Insurance</li>
                     <li>Multiple-peril insurance</li>
                 </ul>
-                <a href="insurance.html"><button>View Accounts</button></a>
+                <a href="#contact-jump"><button>Contact Us</button></a>
             </div>
         </div>
     </div>
@@ -151,7 +159,7 @@
 
     <!--Contact Section-->
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact-jump">
         <div class="locations">
             <h1 class="location-title">
                 Bank Address:
