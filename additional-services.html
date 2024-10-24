@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="page-header flex-space-between-center">
+    <div class="page-header flex-space-between-center">
         <a href="index.html"><img class="header-ceresco" src="images/CerescoWhite.png" alt="CerescoBank Logo"></a>
-        <nav>
-            <label for="menu"></label>
-            <ul>
+        <div class="nav">
+            <ul class="top-navbar">
                 <li><a class="roboto-regular" href="index.html">Home</a></li>
                 <li class="dropdown-parent">
-                    <a class="roboto-regular" href="#">Accounts & Services</a>
+                    <a class="roboto-regular" href="#">Accounts & Services <img class="triangle triangle-black" src="images/dropdown-triangle-bl.png" alt="dropdown"><img class="triangle triangle-white" src="images/dropdown-triangle-wh.png" alt="dropdown"></a>
                     <ul class="dropdown">
                         <li><a class="roboto-regular" href="checking.html">Checking Accounts</a></li>
                         <li><a class="roboto-regular" href="savings.html">Savings Accounts</a></li>
@@ -24,48 +23,84 @@
                 <li><a class="roboto-regular" href="about.html">About Us</a></li>
                 <li><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
             </ul>
-        </nav>
+            <a class="icon" onclick="openSidebar()"><img class="menu-white" src="images/menuicon.png" alt="Open Sidebar"><img class="menu-black" src="images/menuicon-black.png" alt="Open Sidebar"></a>
+        </div>
+    </div>
+    <ul class="side-navbar" id="sidenav-container">
+        <a class="icon nav-close" onclick="closeSidebar()"><img class="menu-white" src="images/xicon-white.png" alt="Close Sidebar"><img class="menu-black" src="images/xicon-black.png" alt="Close Sidebar"></a>
+        <li><a class="roboto-regular" href="index.html">Home</a></li>
+        <li><a class="roboto-regular" href="checking.html">Checking Accounts</a></li>
+        <li><a class="roboto-regular" href="savings.html">Savings Accounts</a></li>
+        <li class="active"><a class="roboto-regular" href="additional-services.html">Additional Services</a></li>
+        <li><a class="roboto-regular" href="about.html">About Us</a></li>
+        <li><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+
+    <h1 class="checking-title">Additional Services</h1>
+
+    <div class="accounts-container">
+        <table class="account-description">
+            <tr class="service-name">
+                <th>Loans</th>
+            </tr>
+            <tr>
+                <td class="service-list">
+                    <ul>
+                        <li>Consumer - All types, Auto, Boat, Personal</li>
+                        <li>Commercial - Operating, Term, SBA, Construction</li>
+                        <li>Agricultural-Operating, Term, Farm Land, and Government Guaranteed</li>
+                        <li>Student Loans</li>
+                        <li>Real Estate – Purchase or Home Improvement</li>
+                        <li>Home Equity - Home Equity Line of Credit, 2nd Mortagage</li>
+                        <li>Nebraska Energy Loans</li>
+                        <li>SBA</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <table class="account-description">
+            <tr class="service-name">
+                <th>Insurance</th>
+            </tr>
+            <tr>
+                <td class="service-list">
+                    <ul>
+                        <li>Auto</li>
+                        <li>Home</li>
+                        <li>Commercial</li>
+                        <li>Property and Casualty Insurance</li>
+                        <li>Life and Disability Insurance</li>
+                        <li>Federal Crop Insurance/Multiple-peril insurance</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <table class="account-description">
+            <tr class="service-name">
+                <th>Other Services</th>
+            </tr>
+            <tr>
+                <td class="service-list">
+                    <ul>
+                        <li>Safe Deposit Box</li>
+                        <li>ATM/Visa Debit Cards</li>
+                        <li>Credit Card Merchant Services</li>
+                        <li>Notary Services</li>
+                        <li>Direct Deposits</li>
+                        <li>Electronic Deposits/Payments</li>
+                        <li>Savings Bond Redemption</li>
+                        <li>Night Depository</li>
+                        <li>Wire Transfers</li>
+                        <li>Cashier's Checks</li>
+                        <li>Bank By Mail</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </div>
 
-    <div class="additional-services">
-
-        <h1>Loans</h1>
-            <ul>
-                <li>Consumer - All types, Auto, Boat, Personal</li>
-                <li>Commercial - Operating, Term, SBA, Construction</li>
-                <li>Agricultural-Operating, Term, Farm Land, and Government Guaranteed</li>
-                <li>Student Loans</li>
-                <li>Real Estate – Purchase or Home Improvement</li>
-                <li>Home Equity - Home Equity Line of Credit, 2nd Mortagage</li>
-                <li>Nebraska Energy Loans</li>
-                <li>SBA</li>
-            </ul>
-
-        <h1>Insurance</h1>
-        <ul>
-            <li>Auto</li>
-            <li>Home</li>
-            <li>Commercial</li>
-            <li>Property and Casualty Insurance</li>
-            <li>Life and Disability Insurance</li>
-            <li>Federal Crop Insurance/Multiple-peril insurance</li>
-        </ul>
-
-        <h1>Other Services</h1>
-        <ul>
-            <li>Safe Deposit Box</li>
-            <li>ATM/Visa Debit Cards</li>
-            <li>Credit Card Merchant Services</li>
-            <li>Notary Services</li>
-            <li>Direct Deposits</li>
-            <li>Electronic Deposits/Payments</li>
-            <li>Savings Bond Redemption</li>
-            <li>Night Depository</li>
-            <li>Wire Transfers</li>
-            <li>Cashier's Checks</li>
-            <li>Bank By Mail</li>
-        </ul>
-    </div>
     <div class="footer flex-column-center">
         <p class="footer-text">
             Send mail to webmaster@cerescobank.com with questions or comments about this web site. <br>
