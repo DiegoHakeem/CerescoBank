@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page-header flex-space-between-center">
         <a href="index.html"><img class="header-ceresco" src="images/CerescoWhite.png" alt="CerescoBank Logo"></a>
-        <nav>
-            <label for="menu"></label>
-            <ul>
+        <div class="nav">
+            <ul class="top-navbar">
                 <li><a class="roboto-regular" href="index.html">Home</a></li>
                 <li class="dropdown-parent">
-                    <a class="roboto-regular" href="#">Accounts & Services</a>
+                    <a class="roboto-regular" href="#">Accounts & Services <img class="triangle triangle-black" src="images/dropdown-triangle-bl.png" alt="dropdown"><img class="triangle triangle-white" src="images/dropdown-triangle-wh.png" alt="dropdown"></a>
                     <ul class="dropdown">
                         <li><a class="roboto-regular" href="checking.html">Checking Accounts</a></li>
                         <li><a class="roboto-regular" href="savings.html">Savings Accounts</a></li>
@@ -24,8 +26,18 @@
                 <li><a class="roboto-regular" href="about.html">About Us</a></li>
                 <li class="active"><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
             </ul>
-        </nav>
+            <a class="icon" onclick="openSidebar()"><img class="menu-white" src="images/menuicon.png" alt="Open Sidebar"><img class="menu-black" src="images/menuicon-black.png" alt="Open Sidebar"></a>
+        </div>
     </div>
+    <ul class="side-navbar" id="sidenav-container">
+        <a class="icon nav-close" onclick="closeSidebar()"><img class="menu-white" src="images/xicon-white.png" alt="Close Sidebar"><img class="menu-black" src="images/xicon-black.png" alt="Close Sidebar"></a>
+        <li><a class="roboto-regular" href="index.html">Home</a></li>
+        <li><a class="roboto-regular" href="checking.html">Checking Accounts</a></li>
+        <li><a class="roboto-regular" href="savings.html">Savings Accounts</a></li>
+        <li><a class="roboto-regular" href="additional-services.html">Additional Services</a></li>
+        <li><a class="roboto-regular" href="about.html">About Us</a></li>
+        <li class="active"><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
     <embed src="images/privacy-policy.pdf" type="application/pdf" width="100%">
         
     <script src="index.js" charset="UTF-8"></script>
